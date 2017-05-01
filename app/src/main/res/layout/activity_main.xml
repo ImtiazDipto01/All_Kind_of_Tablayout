@@ -39,10 +39,10 @@
         android:layout_below="@+id/icon_text_tab"/>
 
     <Button
-        android:id="@+id/bottom_"
+        android:id="@+id/bottom_scroll_tab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="bottom tab"
+        android:text="bottom Scroll tab"
         android:layout_marginTop="15dp"
         android:layout_below="@+id/icon_text_tab"/>
 

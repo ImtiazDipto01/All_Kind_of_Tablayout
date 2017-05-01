@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button Texttab_btn, texticon_tab ;
+    Button Texttab_btn, texticon_tab, bottom_tab ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         Texttab_btn = (Button) findViewById(R.id.texttab) ;
         texticon_tab = (Button) findViewById(R.id.icon_text_tab) ;
+        bottom_tab = (Button) findViewById(R.id.bottom_scroll_tab) ;
 
         Texttab_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +35,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        bottom_tab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), BottomScrollTablayout.class);
+                startActivity(intent);
+            }
+        });
     }
 }

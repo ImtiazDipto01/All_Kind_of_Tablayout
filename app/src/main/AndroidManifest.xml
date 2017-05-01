@@ -22,6 +22,9 @@
         <activity android:name=".TextandIconTablyout"
             android:theme="@style/MyMaterialTheme"></activity>
 
+        <activity android:name=".BottomScrollTablayout"
+            android:theme="@style/MyMaterialTheme"></activity>
+
     </application>
 
 </manifest>
