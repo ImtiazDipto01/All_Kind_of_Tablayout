@@ -9,13 +9,14 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button Texttab_btn ;
+    Button Texttab_btn, texticon_tab ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         Texttab_btn = (Button) findViewById(R.id.texttab) ;
+        texticon_tab = (Button) findViewById(R.id.icon_text_tab) ;
 
         Texttab_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,5 +25,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        texticon_tab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), TextandIconTablyout.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }

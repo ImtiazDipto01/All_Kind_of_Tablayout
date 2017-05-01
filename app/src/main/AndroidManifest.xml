@@ -6,7 +6,6 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyMaterialTheme">
         <activity android:name=".MainActivity">
@@ -19,6 +18,10 @@
 
         <activity android:name=".TablayoutAcitvity"
             android:theme="@style/MyMaterialTheme"></activity>
+
+        <activity android:name=".TextandIconTablyout"
+            android:theme="@style/MyMaterialTheme"></activity>
+
     </application>
 
 </manifest>
