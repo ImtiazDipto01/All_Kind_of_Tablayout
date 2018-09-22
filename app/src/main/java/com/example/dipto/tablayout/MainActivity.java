@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button Texttab_btn, texticon_tab, bottom_tab ;
+    Button Texttab_btn, texticon_tab, bottom_tab, dynamic_tabs ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         Texttab_btn = (Button) findViewById(R.id.texttab) ;
         texticon_tab = (Button) findViewById(R.id.icon_text_tab) ;
         bottom_tab = (Button) findViewById(R.id.bottom_scroll_tab) ;
+        dynamic_tabs = findViewById(R.id.dynamic_tabs);
 
         Texttab_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), BottomScrollTablayout.class);
+                startActivity(intent);
+            }
+        });
+
+        dynamic_tabs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), DynamicTabActivity.class);
                 startActivity(intent);
             }
         });

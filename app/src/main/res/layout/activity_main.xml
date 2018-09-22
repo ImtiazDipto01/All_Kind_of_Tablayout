@@ -46,4 +46,12 @@
         android:layout_marginTop="15dp"
         android:layout_below="@+id/icon_text_tab"/>
 
+    <Button
+        android:id="@+id/dynamic_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dynamic Tab"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/icon_text_tab"/>
+
 </RelativeLayout>

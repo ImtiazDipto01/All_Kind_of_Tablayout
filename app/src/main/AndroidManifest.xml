@@ -15,16 +15,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".TablayoutAcitvity"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".TextandIconTablyout"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".BottomScrollTablayout"
+            android:theme="@style/MyMaterialTheme" />
 
-        <activity android:name=".TablayoutAcitvity"
-            android:theme="@style/MyMaterialTheme"></activity>
-
-        <activity android:name=".TextandIconTablyout"
-            android:theme="@style/MyMaterialTheme"></activity>
-
-        <activity android:name=".BottomScrollTablayout"
-            android:theme="@style/MyMaterialTheme"></activity>
-
+        <activity
+            android:name=".DynamicTabActivity"
+            android:theme="@style/MyMaterialTheme"/>
     </application>
 
 </manifest>
