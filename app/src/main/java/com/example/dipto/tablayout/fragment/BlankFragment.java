@@ -14,6 +14,8 @@ import java.util.HashMap;
 
 public class BlankFragment extends Fragment {
 
+    String id = "" ;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,11 +24,21 @@ public class BlankFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        Bundle bundle = this.getArguments();
-        if (bundle != null) {
-            String id = this.getArguments().getString("id");
-            Log.d("TAB_ID:", id) ;
-        }
         return inflater.inflate(R.layout.home_fragment, container, false);
+    }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+            Bundle bundle = this.getArguments();
+            if (bundle != null) {
+                id = this.getArguments().getString("id");
+                Log.d("TAB_ID:", id) ;
+            }
+        }
+        else{
+            // fragment is no longer visible
+        }
     }
 }

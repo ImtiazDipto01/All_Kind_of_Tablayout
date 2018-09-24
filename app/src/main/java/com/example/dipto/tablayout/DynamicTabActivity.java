@@ -44,6 +44,7 @@ public class DynamicTabActivity extends AppCompatActivity {
         showCustomToolbar();
 
         viewPager = (ViewPager) findViewById(R.id.viewpager) ;
+        viewPager.setOffscreenPageLimit(0);
         setupViewPager(viewPager);
 
         tabLayout = (TabLayout) findViewById(R.id.tablayout);
@@ -109,7 +110,7 @@ public class DynamicTabActivity extends AppCompatActivity {
         blankFragment.setArguments(bundle);
 
         BlankFragment blankFragment2 = new BlankFragment();
-        blankFragment2.setArguments(bundle);
+        blankFragment2.setArguments(bundle2);
 
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager()) ;
         viewPagerAdapter.addFragment(blankFragment, "TAB_1");
